@@ -1,0 +1,7 @@
+Requirement,MoSCoW,MoSCoW rationale,Kano,Kano rationale
+Course enrollment and registration,Must-Have,Required to join courses,Basic,Without it learners cannot participate
+Video lecture streaming,Must-Have,Primary content delivery,Basic,Core expected service
+Quizzes and assignments,Should-Have,Practice follows course delivery,Performance,Better feedback increases value
+Progress dashboard,Should-Have,Useful once activity tracking exists,Performance,Clear progress improves satisfaction
+Peer discussion forums,Could-Have,Community can follow launch,Attractive,Can delight when active
+Certificate generation,Could-Have,Recognition can wait for stable completion rules,Attractive,Adds value beyond core learning
