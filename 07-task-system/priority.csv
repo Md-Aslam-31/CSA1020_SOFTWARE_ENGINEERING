@@ -1,5 +1,0 @@
-Requirement,MoSCoW,MoSCoW rationale,Kano,Kano rationale
-Login and role assignment,Must-Have,Security and permissions are foundational,Basic,Expected; absence blocks secure use
-Task creation and assignment,Must-Have,Core purpose of system,Basic,Expected foundation
-Priorities and deadlines,Should-Have,Planning support follows basic task flow,Performance,Better prioritization increases value
-Progress tracking and reporting,Should-Have,Visibility improves after core workflow,Performance,Actionable visibility increases satisfaction
