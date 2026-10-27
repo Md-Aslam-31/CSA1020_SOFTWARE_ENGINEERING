@@ -1,0 +1,13 @@
+ID,Requirement,MoSCoW,Kano,Kano assumption and rationale
+TD-01,Sign in and assign a role,Must-Have,Basic,Users expect secure access and role boundaries
+TD-02,Create edit and archive a task,Must-Have,Basic,Core purpose of the product
+TD-03,Assign a task to a teammate,Must-Have,Basic,Shared work needs clear ownership
+TD-04,Set due date and priority,Must-Have,Performance,Planning value rises with useful deadlines and priority
+TD-05,Add task labels,Should-Have,Performance,Flexible filtering improves usefulness
+TD-06,Attach reference links,Should-Have,Performance,Relevant context reduces handoff effort
+TD-07,Comment on a task,Should-Have,Performance,Clear history improves collaboration
+TD-08,View a team board,Should-Have,Performance,Shared status improves visibility
+TD-09,Receive overdue reminders,Could-Have,Attractive,Helpful feature but manual review can work initially
+TD-10,Export tasks to CSV,Could-Have,Attractive,Convenient to some teams but not core workflow
+TD-11,Use keyboard shortcuts,Could-Have,Attractive,May delight frequent users
+TD-12,Auto-generate a sprint plan,Won't-Have this release,Indifferent,Manual planning is adequate at this stage

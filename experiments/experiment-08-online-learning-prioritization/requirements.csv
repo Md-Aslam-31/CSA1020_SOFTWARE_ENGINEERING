@@ -1,0 +1,7 @@
+ID,Requirement,MoSCoW,Kano,Kano hypothesis,Delivery rationale
+CS-01,Course enrollment and registration,Must-Have,Basic,Expected; without it learners cannot join,Establish identity and enrollment first
+CS-02,Video lecture streaming,Must-Have,Basic,Core service; reliability matters,Primary learning delivery
+CS-03,Interactive quizzes and assignments,Should-Have,Performance,Quality feedback should raise value,Build after enrollment and playback
+CS-04,Progress tracking dashboard,Should-Have,Performance,Clearer progress should help learners,Requires course activity data
+CS-05,Peer discussion forums,Could-Have,Attractive,May delight cohorts that value community,Can follow course launch
+CS-06,Certificate generation,Could-Have,Attractive,Useful recognition but not required to learn,Define completion rules first

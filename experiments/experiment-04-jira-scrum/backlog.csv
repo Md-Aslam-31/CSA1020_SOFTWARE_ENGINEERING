@@ -1,0 +1,9 @@
+Issue,Summary,Priority,Points,Acceptance criteria,Proposed sprint
+CC-01,Create account and sign in,High,5,Member can register and sign in with validated email,Sprint 1
+CC-02,Search listings by category,Highest,5,Search returns active listings in selected category,Sprint 1
+CC-03,View listing details,High,3,Listing shows price condition seller and photos,Sprint 1
+CC-04,Create a listing,High,5,Member can publish title price and category,Sprint 1
+CC-05,Save a listing,Medium,3,Saved items appear in member's list,Sprint 2
+CC-06,Message a seller,Medium,5,Buyer can send a message from listing,Sprint 2
+CC-07,Mark a listing sold,Medium,2,Seller can close listing and remove it from search,Sprint 2
+CC-08,Report a listing,Low,3,Member can submit a reason for moderator review,Sprint 3
