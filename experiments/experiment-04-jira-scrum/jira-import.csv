@@ -1,0 +1,9 @@
+Issue Type,Summary,Description,Story Points,Priority,Acceptance Criteria,Planned Sprint,Status,Depends On
+Story,Create account and sign in,A campus member can access saved listings with an authenticated profile,5,High,Valid email creates account; invalid input shows error; signed-in member sees profile,Sprint 1,To Do,
+Story,Search listings by category,Buyers can find active listings using category and keyword,5,Highest,Search accepts keyword; category filter updates results; empty results show a helpful message,Sprint 1,To Do,
+Story,View listing details,Buyers can inspect the price condition and seller details before contacting,3,High,Detail view shows title price condition seller and image placeholders; closed listing cannot be contacted,Sprint 1,To Do,CC-02
+Story,Create a listing,Sellers can publish a campus item with required information,5,High,Title price category condition and contact method are required; successful listing appears in search,Sprint 1,To Do,CC-01
+Story,Save a listing,Members can keep interesting listings in a saved list,3,Medium,Signed-in member can save and unsave; saved list persists after reload,Sprint 2,To Do,CC-01
+Story,Message a seller,Interested buyers can ask a seller a question,5,Medium,Message form validates text; seller receives a message in the prototype inbox,Sprint 2,To Do,CC-03
+Story,Mark a listing sold,Sellers can close a listing after a sale,2,Medium,Seller can mark own listing sold; sold listing no longer appears in active search,Sprint 2,To Do,CC-04
+Story,Report a listing,Members can flag a listing for moderator review,3,Low,Reason is required; report is attached to listing; duplicate reports are prevented,Sprint 3,To Do,CC-03

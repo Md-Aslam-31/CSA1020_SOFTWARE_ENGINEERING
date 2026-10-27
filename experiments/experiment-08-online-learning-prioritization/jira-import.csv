@@ -1,0 +1,7 @@
+ID,Requirement,User Impact,Feasibility,MoSCoW,Kano Hypothesis,Rationale and Acceptance Evidence,Dependency
+CS-01,Course enrollment and registration,High,High,Must Have,Basic,Learner can enroll in an open course and see enrollment confirmation,Account and course catalog
+CS-02,Video lecture streaming,High,Medium,Must Have,Basic,Enrolled learner can start a lecture and recover from a paused connection,CS-01; media hosting
+CS-03,Interactive quizzes and assignments,High,Medium,Should Have,Performance,Learner submits answers and sees score or instructor feedback,CS-01; CS-02
+CS-04,Progress tracking dashboard,Medium,Medium,Should Have,Performance,Dashboard shows completed lectures and outstanding activities,CS-02; CS-03
+CS-05,Peer discussion forums,Medium,Medium,Could Have,Attractive,Learner can post and reply in a course discussion,CS-01; moderation
+CS-06,Certificate generation,Medium,Low,Could Have,Attractive,Eligible learner can download a certificate after passing completion rules,CS-03; CS-04

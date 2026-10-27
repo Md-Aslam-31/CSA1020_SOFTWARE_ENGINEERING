@@ -1,0 +1,7 @@
+Issue Type,Summary,Description,Estimate,Priority,Acceptance Criteria,Initial Status
+Story,Search books by title,Borrower can find a book using its title,3,High,Partial title match returns catalog items and no-match result explains next step,To Do
+Story,Search books by author,Borrower can find books written by an author,2,High,Author search is case-insensitive and returns all matching items,To Do
+Story,Show copy availability,Borrower can see total and available copies for a title,3,High,Availability is visible before a reservation action,To Do
+Story,Reserve an available copy,Borrower can request a copy when eligible,5,Medium,Reservation is confirmed only when a copy is available and account is eligible,To Do
+Story,Notify reader when hold is ready,Borrower receives a notice when a reserved item can be collected,3,Medium,Notice includes item title pickup deadline and collection location,To Do
+Story,View librarian circulation dashboard,Librarian can review current loans and holds,5,Medium,Authorized librarian sees loan due date and hold queue counts,To Do

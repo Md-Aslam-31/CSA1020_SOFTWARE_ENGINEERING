@@ -1,0 +1,13 @@
+ID,Requirement,User Impact,Feasibility,MoSCoW,Kano Hypothesis,Rationale and Acceptance Evidence,Dependency
+TD-01,Sign in and assign a role,High,Medium,Must Have,Basic,Member can sign in and only see role-authorized actions,User identity service
+TD-02,Create edit and archive a task,High,High,Must Have,Basic,Task title and owner are required; edits persist; archived item leaves active board,TD-01
+TD-03,Assign a task to a teammate,High,High,Must Have,Basic,Assignee is visible on the task and may be changed by a team member,TD-01
+TD-04,Set due date and priority,High,High,Must Have,Performance,Task exposes due date and priority; overdue items are clearly marked,TD-02
+TD-05,Add task labels,Medium,High,Should Have,Performance,Member can apply and filter by one or more labels,TD-02
+TD-06,Attach reference links,Medium,High,Should Have,Performance,Member can save a valid URL with a readable label,TD-02
+TD-07,Comment on a task,Medium,Medium,Should Have,Performance,Comments show author and time in chronological order,TD-01; TD-02
+TD-08,View a team board,High,Medium,Should Have,Performance,Board groups active tasks by status and shows owner and priority,TD-02; TD-03
+TD-09,Receive overdue reminders,Medium,Medium,Could Have,Attractive,Opted-in member receives a reminder after a task becomes overdue,TD-04
+TD-10,Export tasks to CSV,Low,High,Could Have,Attractive,Export includes current task title owner priority due date and status,TD-02
+TD-11,Use keyboard shortcuts,Low,Medium,Could Have,Attractive,Documented shortcuts work without intercepting text entry,TD-08
+TD-12,Auto-generate a sprint plan,Low,Low,Won't Have this release,Indifferent,Not in first release; manual prioritization remains available,TD-04; TD-08

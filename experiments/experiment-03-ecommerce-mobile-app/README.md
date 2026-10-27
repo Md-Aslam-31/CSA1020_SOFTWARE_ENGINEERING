@@ -1,23 +1,27 @@
 # Experiment 03 — Nook & Nest Stakeholder Prototype
 
 ## Aim
-Create an original home-goods storefront concept and frame a stakeholder review around browsing hierarchy and product discovery.
+Create and compare two original storefront hierarchies, then model product search, cart, checkout, order tracking, and stakeholder feedback.
 
 ## Tools Required
-Figma, plus the local HTML/CSS/JavaScript prototype in app/.
+Figma and the local HTML/CSS/JavaScript prototype in app/.
 
 ## Algorithm
-1. Define a calm editorial direction for the Nook & Nest brand.
-2. Arrange navigation, a featured story, product cards, prices, and a review prompt.
-3. Invite stakeholders to assess whether the hierarchy supports product discovery.
-4. Use the local prototype’s view switch and feedback form to demonstrate comparison and capture sample feedback.
-5. Treat entries as demonstration data until real stakeholders review the design.
+1. Compare product-first and campaign-first home-screen layouts using the same home-goods catalogue.
+2. Search and filter products; open a product detail and add a selected quantity to the bag.
+3. Apply the sample NEST10 discount and inspect the delivery and price totals.
+4. Complete a demo checkout with non-sensitive sample details; no payment or order is transmitted.
+5. Review the local order-tracking state and save a product review.
+6. Record stakeholder role, preferred layout, and rationale locally; treat responses as sample data until real reviewers participate.
 
-## Figma File
-[Open the Nook & Nest design in your account](https://www.figma.com/design/iGjfeEuj7Ytsn396i7QsdN)
+## Figma Prototype
+[Open the Nook & Nest mobile flow in your Figma account](https://www.figma.com/design/iGjfeEuj7Ytsn396i7QsdN?node-id=3-2). It includes product-first and campaign-first variants, timed search, results, product detail, a discounted bag, and order tracking/review.
+
+## Local Prototype
+[Open the storefront app source](app/index.html). Search, cart, discount, checkout, feedback, and review state are stored only in this browser.
 
 ## Output Screenshots
-![Original Nook & Nest storefront design](screenshots/nook-and-nest-home.png)
+[Product-first home](screenshots/shop-home.png) · [Campaign variant](screenshots/shop-campaign.png) · [Search results](screenshots/shop-results.png) · [Product detail](screenshots/shop-detail.png) · [Discounted bag](screenshots/shop-cart.png) · [Order tracking](screenshots/shop-tracking.png)
 
 ## Result
-An original editable storefront screen and local stakeholder-review prototype are available. The screenshot is the calm editorial direction; the alternate hierarchy and feedback workflow are demonstrated in the local app.
+The two layouts and purchase journey are prototyped with animated transitions. Stakeholder feedback and commerce states remain demonstration data; no real orders are processed.

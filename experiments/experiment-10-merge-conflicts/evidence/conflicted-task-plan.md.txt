@@ -1,0 +1,11 @@
+# Weekly task plan
+
+<<<<<<< HEAD
+**Weekly focus:** Review deadlines early and plan the week ahead.
+=======
+**Weekly focus:** Protect quiet study blocks for deep work.
+>>>>>>> feature/quiet-study-blocks
+
+- Monday: List upcoming deadlines
+- Wednesday: Work on the highest priority task
+- Friday: Review progress and plan next week

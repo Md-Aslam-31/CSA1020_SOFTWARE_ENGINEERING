@@ -4,7 +4,7 @@
 Build an original Confluence project overview with live Jira task statuses and a progress display in your Atlassian account.
 
 ## Tools Required
-Your Jira and Confluence account, issues.csv, and project-overview.md.
+Your Atlassian account, jira-import.csv, and project-overview.md.
 
 ## Algorithm
 1. Create a Jira project named Campus Library Services and add the six original issues.
@@ -14,7 +14,7 @@ Your Jira and Confluence account, issues.csv, and project-overview.md.
 5. Capture the live page and board, then replace the draft with your own URLs.
 
 ## Output Screenshots
-A local page draft is available. Live issue and page captures are pending your Atlassian connection.
+A local page draft and [Jira import CSV](jira-import.csv) are available. Live issue and page captures are pending your Atlassian connection.
 
 ## Result
 The original issue set and page structure are prepared. No Jira or Confluence object is claimed yet.

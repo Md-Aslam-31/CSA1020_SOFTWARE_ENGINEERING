@@ -1,0 +1,6 @@
+*   120e7c8 Resolve weekly focus conflict
+|\
+| * 3710ae8 Prioritize quiet study blocks
+* | 50773dd Emphasize early deadline review
+|/
+* 8dfaf05 Add weekly task plan baseline
