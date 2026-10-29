@@ -1,20 +1,33 @@
-# Experiment 08 — ClassSpring Learning Platform MoSCoW and Kano
+# Experiment 08 — ClassSpring Online Learning Prioritization
 
 ## Aim
-Prioritize the six requested learning-platform capabilities in Jira and keep Kano hypotheses distinct from validated research.
 
-## Tools Required
-Your Jira account and jira-import.csv.
+Prioritize six original online-learning capabilities using MoSCoW release scope and Kano satisfaction hypotheses, with acceptance evidence and prerequisites recorded for each.
 
-## Algorithm
-1. Create a ClassSpring Jira project and add the six required capabilities.
-2. Add separate MoSCoW and Kano fields, impact, feasibility, acceptance evidence, and dependencies.
-3. Create filters for both prioritization methods.
-4. Plan a one-week sprint around enrollment and lecture access.
-5. Gather learner feedback before treating Kano categories as validated.
+## Live Jira workspace
 
-## Output Screenshots
-Jira screenshots are pending entry into your own project.
+- Project: [ClassSpring Learning Platform](https://sofenglab.atlassian.net/browse/CLSPRG)
+- Live backlog: [CLSPRG board 70](https://sofenglab.atlassian.net/jira/software/c/projects/CLSPRG/boards/70/backlog)
+- Requirement detail example: [CLSPRG-1](https://sofenglab.atlassian.net/browse/CLSPRG-1)
+
+## Method and result
+
+1. Define six original capabilities: enrollment, lecture streaming, assessments, progress tracking, discussion, and certificates.
+2. Set MoSCoW scope independently from urgency: 2 Must, 2 Should, and 2 Could requirements.
+3. Record two Basic, two Performance, and two Attractive Kano expectations. Each is an unvalidated hypothesis requiring learner feedback.
+4. Record learner impact, feasibility, acceptance evidence, and dependencies in the Jira issue descriptions. Model labels (`moscow-*`, `kano-*`) support searching and classification without separate custom fields.
+5. Leave all six issues To Do. No education service or feature implementation is claimed.
+
+The complete original [requirement register](requirements.csv) and [decision record](decision-record.md) provide the rationale and acceptance checks. The issue keys are CLSPRG-1 through CLSPRG-6 in requirement-ID order.
+
+## Evidence
+
+![ClassSpring live Jira backlog showing six original capabilities](screenshots/classspring-backlog.png)
+
+![CLSPRG-1 details with learner impact, feasibility, acceptance evidence, dependencies and model labels](screenshots/classspring-requirement-detail.png)
+
+The live project stores classifications in descriptions and searchable labels; separate native MoSCoW/Kano dropdown columns are not configured. Kano categories remain hypotheses, not validated user findings.
 
 ## Result
-The original six-feature analysis includes impact, feasibility, Kano hypotheses, acceptance evidence, and dependencies. It is prepared locally; no Jira project is claimed complete.
+
+The six original learning-platform capabilities are prioritized in the user’s own Jira project with MoSCoW, provisional Kano, learner impact, feasibility, acceptance evidence, and dependencies. The live backlog is To Do and the report makes no implementation or user-validation claim.
