@@ -4,13 +4,27 @@
 
 Prioritize original team task-management requirements using MoSCoW for release scope and Kano for expected satisfaction. Kano values remain hypotheses until user research validates them.
 
+## Tools Required
+
+- Jira backlog, epics, stories, priority, labels, estimates, sprint, and issue links.
+- MoSCoW and Kano models with explicit validation questions.
+- Browser and CSV decision records.
+
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Live project and sample requirement | [TeamDesk backlog](https://sofenglab.atlassian.net/jira/software/c/projects/TEAMDESK/boards/69/backlog) · [TEAMDESK-1](https://sofenglab.atlassian.net/browse/TEAMDESK-1) |
+| Requirement and decision artifacts | [Requirements CSV](requirements.csv) · [Decision record](decision-record.md) · [Sprint plan](sprint-plan.md) |
+| Query views and screenshots | [JQL views](filter-queries.md) · [Evidence folder](screenshots/) |
+
 ## Live Jira workspace
 
 - Project: [TeamDesk Task Management](https://sofenglab.atlassian.net/browse/TEAMDESK)
 - Live backlog: [TEAMDESK board 69](https://sofenglab.atlassian.net/jira/software/c/projects/TEAMDESK/boards/69/backlog)
 - Requirement detail example: [TEAMDESK-1](https://sofenglab.atlassian.net/browse/TEAMDESK-1)
 
-## Method and result
+## Algorithm and result
 
 1. Break the original task-management scope into 12 testable requirements covering access, task lifecycle, assignment, planning, collaboration, reminders, export, and automation. Organize them under four original feature epics in Jira.
 2. Assign MoSCoW scope independently from Jira Priority. The release proposal is 4 Must, 4 Should, 3 Could, and 1 Won’t this release.

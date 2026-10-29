@@ -1,0 +1,6 @@
+Experiment 21 patch validation
+
+Command: git apply --unidiff-zero --check change.patch
+Result: passed against the included CampusConnect README snapshot.
+
+The patch has a zero-context hunk because it changes exactly one known sentence. Apply it only to the matching README snapshot, inspect the resulting diff, and run `git diff --check` before staging.

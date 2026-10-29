@@ -4,6 +4,28 @@
 
 Prioritize the ten library-system features listed in the lab PDF, with explicit impact, feasibility, rationale, effort, cost, and release assumptions.
 
+## Tools Required
+
+- Microsoft Excel or compatible spreadsheet software.
+- MoSCoW decision rules and the ten features from the lab PDF.
+- Filter, formula, validation, and chart/summary support in the workbook.
+
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Editable workbook | [Library_MoSCoW.xlsx](Library_MoSCoW.xlsx) |
+| Screenshots | [Priority matrix](workbook-priority-matrix.png) · [Summary and assumptions](workbook-summary-assumptions.png) |
+| Portfolio index | [All experiments](../../README.md) |
+
+## Algorithm
+
+1. Extract and preserve the ten library features from the PDF.
+2. Assess user impact and delivery feasibility for each feature.
+3. Assign a MoSCoW category with a short rationale and define the first-release boundary.
+4. Estimate effort and labor cost using the assumptions recorded in the workbook.
+5. Review counts, totals, formulas and filters; retain the workbook as the editable source of truth.
+
 ## Prioritization result
 
 | MoSCoW | Count | Release decision |
@@ -28,3 +50,7 @@ The workbook assumes an eight-week first release, one product owner, one librari
 ![MoSCoW summary and assumptions](workbook-summary-assumptions.png)
 
 The images are workbook previews; the workbook is the editable source.
+
+## Result
+
+The workbook classifies all ten features as 3 Must, 3 Should, 3 Could, and 1 Won't this release. It records a planning estimate of 56 person-days and ₹84,000 labor under the stated assumptions; hosting, hardware, and translation are excluded. This is a prioritization exercise, not an approved budget.

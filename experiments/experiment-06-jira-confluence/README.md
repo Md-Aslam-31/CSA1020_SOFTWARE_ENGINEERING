@@ -4,6 +4,20 @@
 
 Connect an original library-service Jira backlog to a Confluence overview that reports the linked requirements and derives project progress from their real Jira statuses.
 
+## Tools Required
+
+- Jira project, backlog, sprint, stories, and issue links in the student's Atlassian account.
+- Confluence space and page with a Jira Issues macro.
+- Browser and local CSV/page-outline records for review.
+
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Live workspace | [LIBSYS board](https://sofenglab.atlassian.net/jira/software/c/projects/LIBSYS/boards/68/backlog) · [Confluence overview](https://sofenglab.atlassian.net/wiki/spaces/CAMPUSLIB/pages/5603329/Library+Management+System+Project+Overview) |
+| Source planning records | [Issues CSV](issues.csv) · [Jira import CSV](jira-import.csv) · [Confluence page draft](project-overview.md) |
+| Screenshots | [Evidence folder](screenshots/) |
+
 ## Live workspace
 
 - Jira project: [Campus Library Services (LIBSYS)](https://sofenglab.atlassian.net/browse/LIBSYS)
@@ -11,7 +25,7 @@ Connect an original library-service Jira backlog to a Confluence overview that r
 - Confluence page: [Library Management System Project Overview](https://sofenglab.atlassian.net/wiki/spaces/CAMPUSLIB/pages/5603329/Library+Management+System+Project+Overview)
 - Confluence space: Campus Library Management System (CAMPUSLIB)
 
-## Work completed
+## Algorithm
 
 1. Created seven original library requirements as live Jira stories: title and author search, copy availability, reservation, hold notification, circulation dashboard, and monthly circulation report.
 2. Published and expanded the Confluence overview page in the user’s account with a linked issue register, seven-story progress summary, sprint schedule, estimate and responsibility plan, risks, and Definition of Done.

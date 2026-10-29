@@ -4,6 +4,20 @@
 
 Prioritize nine original online-learning capabilities using MoSCoW release scope and Kano satisfaction hypotheses, with acceptance evidence, paired research questions, prerequisites, and an active sample sprint.
 
+## Tools Required
+
+- Jira project, epics, stories, labels, estimates, sprint, and dependency links.
+- MoSCoW and Kano frameworks; learner interviews/surveys would be required to validate Kano hypotheses.
+- Browser and local requirement/decision records.
+
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Live project and sample requirement | [ClassSpring board](https://sofenglab.atlassian.net/jira/software/c/projects/CLSPRG/boards/70/backlog) · [CLSPRG-1](https://sofenglab.atlassian.net/browse/CLSPRG-1) |
+| Requirement and sprint artifacts | [Requirements CSV](requirements.csv) · [Decision record](decision-record.md) · [Sprint plan](sprint-plan.md) |
+| Reproducible JQL and screenshots | [JQL query set](filter-queries.md) · [Evidence folder](screenshots/) |
+
 ## Live Jira workspace
 
 - Project: [ClassSpring Learning Platform](https://sofenglab.atlassian.net/browse/CLSPRG)
@@ -11,14 +25,14 @@ Prioritize nine original online-learning capabilities using MoSCoW release scope
 - Requirement example: [CLSPRG-1](https://sofenglab.atlassian.net/browse/CLSPRG-1)
 - Sprint: CLSPRG Sprint 1 · 29 October–5 November 2026
 
-## Method and result
+## Algorithm and result
 
 1. Define the six original capabilities—enrollment, lecture streaming, assessments, progress tracking, discussion, and certificates—plus bookmarks/notes, milestone acknowledgements, and a study assistant deferred from the first release.
 2. Set MoSCoW scope independently from urgency: 2 Must, 2 Should, 4 Could, and 1 Won’t this release.
 3. Record 2 Basic, 3 Performance, and 4 Attractive Kano hypotheses. Each story includes a paired functional/dysfunctional question for future learner research; no survey has been run.
 4. Organize the nine stories under three feature epics, record impact, feasibility, acceptance evidence and prerequisites, and add 14 native dependency links.
 5. Start an eight-story, 22-point sprint. The AI assistant stays outside it. Current status: 8 To Do, 0% complete; this is a planning baseline and not implementation evidence.
-6. Use searchable model labels and [live JQL view links](filter-queries.md). Separate native MoSCoW/Kano dropdown fields and saved filters were not available through the connected Jira operations.
+6. Use searchable model labels and the [ready-to-run JQL query set](filter-queries.md). Separate native MoSCoW/Kano dropdown fields and saved filters were not available through the connected Jira operations.
 
 The [nine-story requirement register](requirements.csv), [decision record](decision-record.md), and [active sprint plan](sprint-plan.md) preserve the original ClassSpring scenario. The JIRA hierarchy and sprint are linked above.
 

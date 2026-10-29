@@ -1,0 +1,40 @@
+name: Deploy experiment portfolio to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the portfolio
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Prepare the site
+        run: |
+          mkdir -p public
+          cp index.html public/index.html
+          cp -R experiments public/experiments
+          touch public/.nojekyll
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - name: Deploy portfolio
+        id: deployment
+        uses: actions/deploy-pages@v4

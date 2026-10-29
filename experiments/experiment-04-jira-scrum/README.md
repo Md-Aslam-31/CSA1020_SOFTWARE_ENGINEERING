@@ -4,6 +4,20 @@
 
 Plan an original one-week Scrum sprint for CampusCart, a campus marketplace, using a live Jira Scrum backlog and an explicitly scoped MVP.
 
+## Tools Required
+
+- Jira Scrum project and board in the student's Atlassian account.
+- Browser and the experiment's backlog/sprint planning records.
+- Jira stories, estimates, dependency links, and sprint reporting.
+
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Live project and board | [CampusCart project](https://sofenglab.atlassian.net/browse/CCART) · [Sprint backlog](https://sofenglab.atlassian.net/jira/software/c/projects/CCART/boards/67/backlog) |
+| Sprint plan and import data | [Sprint plan](sprint-plan.md) · [Backlog CSV](backlog.csv) · [Jira import CSV](jira-import.csv) |
+| Screenshots | [Evidence folder](screenshots/) |
+
 ## Live Jira workspace
 
 - **Project:** [CampusCart Marketplace (CCART)](https://sofenglab.atlassian.net/browse/CCART)
@@ -11,7 +25,7 @@ Plan an original one-week Scrum sprint for CampusCart, a campus marketplace, usi
 - **Current sprint window:** 29 October–5 November 2026
 - **Scope:** eight original stories total; four selected for the active sprint; four remain in the backlog.
 
-## Method and result
+## Algorithm and result
 
 1. Define a marketplace goal: campus members can find active listings and sellers can publish a listing.
 2. Create eight original story records covering account access, category search, listing detail, listing creation, saving, seller messaging, sold-state handling, and moderation reports.

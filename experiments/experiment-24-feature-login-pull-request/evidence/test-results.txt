@@ -1,0 +1,16 @@
+test_bad_salt_encoding (test_login.LoginTests.test_bad_salt_encoding) ... ok
+test_empty_username_or_password (test_login.LoginTests.test_empty_username_or_password) ... ok
+test_invalid_iteration_count (test_login.LoginTests.test_invalid_iteration_count) ... ok
+test_malformed_user_record (test_login.LoginTests.test_malformed_user_record) ... ok
+test_non_mapping_accounts (test_login.LoginTests.test_non_mapping_accounts) ... ok
+test_non_string_inputs (test_login.LoginTests.test_non_string_inputs) ... ok
+test_record_builder_rejects_weak_parameters (test_login.LoginTests.test_record_builder_rejects_weak_parameters) ... ok
+test_short_salt_or_wrong_hash_length (test_login.LoginTests.test_short_salt_or_wrong_hash_length) ... ok
+test_unknown_user (test_login.LoginTests.test_unknown_user) ... ok
+test_valid_credentials (test_login.LoginTests.test_valid_credentials) ... ok
+test_wrong_password (test_login.LoginTests.test_wrong_password) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.458s
+
+OK

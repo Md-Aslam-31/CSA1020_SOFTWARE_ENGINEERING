@@ -11,6 +11,16 @@ Deploy a small learning task app with a browser frontend, Flask API, and Postgre
 - `compose.yaml`: local three-service development stack with a named PostgreSQL volume and health checks.
 - `k8s/studyspark.yaml`: PostgreSQL Stateful backing resources (Deployment/PVC/Service), API and frontend Deployments, and Services including NodePort 30080.
 
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Browser frontend and local preview capture | [StudySpark page](frontend/index.html) · [Local screenshot](screenshots/studyspark-local-browser.png) |
+| Flask API and passing test output | [API source](backend/app.py) · [3 passing tests](evidence/api-tests.txt) |
+| Multi-service container stack | [Compose file](compose.yaml) |
+| Cluster resources | [Kubernetes manifest](k8s/studyspark.yaml) |
+| Portfolio index | [All experiments](../../README.md) |
+
 ## Run locally with Compose
 
 From this directory:
@@ -47,4 +57,4 @@ This screenshot documents the local frontend/API preview only. It is not Docker 
 
 ## Verification and result
 
-The API tests exercise database health, create/list persistence, and title validation; run them with `python -m pip install -r backend/requirements.txt` then `python -m unittest discover -s backend -v`. Docker and kubectl are not installed in the authoring environment, so container and cluster results are not represented as completed. The manifests and reproducible steps are included; no screenshot of a live deployment is claimed.
+The API tests exercise database health, create/list persistence, and title validation; run them with `python -m pip install -r backend/requirements.txt` then `python -m unittest discover -s backend -v`. The captured output is in [evidence/api-tests.txt](evidence/api-tests.txt). Docker and kubectl are not installed in the authoring environment, so container and cluster results are not represented as completed. The manifests and reproducible steps are included; no screenshot of a live deployment is claimed.

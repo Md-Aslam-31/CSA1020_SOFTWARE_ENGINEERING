@@ -1,0 +1,8 @@
+test_create_and_list_task (test_app.StudySparkApiTests.test_create_and_list_task) ... ok
+test_database_health (test_app.StudySparkApiTests.test_database_health) ... ok
+test_rejects_blank_and_long_title (test_app.StudySparkApiTests.test_rejects_blank_and_long_title) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.085s
+
+OK

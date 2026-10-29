@@ -1,0 +1,14 @@
+✔ summarizes counts, remaining work and rounded completion (3.4862ms)
+✔ returns a zero percentage for an empty task list (0.1905ms)
+✔ does not mutate input task data (0.1717ms)
+✔ rejects a non-array value (1.3592ms)
+✔ rejects malformed task entries (0.6208ms)
+✔ rejects duplicate task ids (0.1661ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 114.485

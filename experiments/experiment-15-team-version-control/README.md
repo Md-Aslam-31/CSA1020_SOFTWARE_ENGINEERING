@@ -12,6 +12,16 @@ Git and GitHub.
 
 [Open the ModuleMate prototype](app/index.html). It presents three independently owned modules (Campus Directory, Events & Clubs, Student Support), their sample branch names and review states, and supports a live module search. The page is a local static prototype; displayed owners/statuses illustrate a workflow and do not claim that separate people or GitHub PRs exist.
 
+## Quick access links
+
+| What to open | Link |
+| --- | --- |
+| Original module workspace | [ModuleMate prototype](app/index.html) |
+| Styles and search interaction | [Stylesheet](app/styles.css) · [Application script](app/app.js) |
+| Local browser capture | [ModuleMate screenshot](screenshots/modulemate-overview.png) |
+| Team workflow report | [This experiment](README.md) |
+| Portfolio index | [All experiments](../../README.md) |
+
 ## Team workflow
 
 1. Protect `main` and require a successful check before merge.
@@ -28,5 +38,5 @@ The original UI source and branch/review procedure are included. The PR and conf
 
 ![ModuleMate browser prototype](screenshots/modulemate-overview.png)
 
-This is a real browser capture of the local prototype; it documents the UI only, not remote GitHub workflow activity.
+This is a real browser capture of the local prototype; it documents the UI only, not remote GitHub workflow activity. Unlike the reference's private team project, the prototype uses original ModuleMate content and does not reuse another person's team repository, PRs or identity.
 

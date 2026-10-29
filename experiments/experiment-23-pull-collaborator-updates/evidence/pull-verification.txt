@@ -1,0 +1,6 @@
+Experiment 23 local two-clone simulation
+Writer HEAD: a44a1ff93000f10b3aee42415e639b2e92a9a3d3
+Reader HEAD: a44a1ff93000f10b3aee42415e639b2e92a9a3d3
+Reader working tree: clean
+Pulled README update: verified
+Remote type: local bare repository; no GitHub collaborator account was used.

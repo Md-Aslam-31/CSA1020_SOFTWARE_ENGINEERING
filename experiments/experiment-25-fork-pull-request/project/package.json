@@ -1,0 +1,9 @@
+{
+  "name": "campusconnect-task-summary",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original task-summary helper for Experiment 25",
+  "scripts": {
+    "test": "node --test"
+  }
+}

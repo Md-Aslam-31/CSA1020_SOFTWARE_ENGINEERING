@@ -5,3 +5,6 @@ CS-03,Interactive quizzes and assignments,High,Medium,Should Have,Performance,Le
 CS-04,Progress tracking dashboard,Medium,Medium,Should Have,Performance,Dashboard shows completed lectures and outstanding activities,CS-02; CS-03
 CS-05,Peer discussion forums,Medium,Medium,Could Have,Attractive,Learner can post and reply in a course discussion,CS-01; moderation
 CS-06,Certificate generation,Medium,Low,Could Have,Attractive,Eligible learner can download a certificate after passing completion rules,CS-03; CS-04
+CS-07,Bookmark lectures and save private notes,Medium,High,Could Have,Performance,Learner can save a lecture bookmark and private note and find them later,CS-01; CS-02
+CS-08,Celebrate course milestones,Low,Medium,Could Have,Attractive,Learner receives an accessible milestone acknowledgement after completing a defined course step,CS-04; motion preferences
+CS-09,Ask a course assistant for study guidance,Medium,Low,Won't Have this release,Attractive,Assistant response is limited to approved course materials and evaluated for accuracy and privacy,CS-01; approved content; safety evaluation
