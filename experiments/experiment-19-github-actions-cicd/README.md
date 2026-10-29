@@ -10,4 +10,6 @@ The active workflow is [`.github/workflows/experiment-19-cicd.yml`](../../.githu
 
 ## Verification and evidence
 
-The two unit tests pass locally under Python 3.14. The workflow will execute after the pushed commit and can be checked in the repository Actions tab; no hosted run or deployment URL is claimed before that run is observed.
+The two unit tests pass locally under Python 3.14. [Run #1 on commit `9501251`](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/40841798183) completed successfully: hosted Actions installed the requirements, ran the tests, built the container, and published `ghcr.io/md-aslam-31/csa1020_software_engineering/campus-todos:9501251`. Pull it with `docker pull ghcr.io/md-aslam-31/csa1020_software_engineering/campus-todos:9501251`; GHCR may require `docker login ghcr.io` if the package remains private.
+
+The current workflow ends at an explicit deployment gate. No cloud platform credentials or deployment target were configured, so no cloud URL is claimed. A later run for the cache-cleanup commit was still marked in progress at the time of writing; this report's success statement refers only to run #1.
