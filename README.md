@@ -4,7 +4,7 @@ Ten original experiment directories are organized using the reference repository
 
 | # | Experiment | Work and access |
 |---|---|---|
-| 01 | Trello Kanban | [Report](experiments/experiment-01-kanban-board/README.md) · [Local interactive board](experiments/experiment-01-kanban-board/board/index.html) · Trello board link pending account connection |
+| 01 | Trello Kanban | [Report](experiments/experiment-01-kanban-board/README.md) · [Live Trello board](https://trello.com/b/r3OtgFKJ/se-lab-campus-task-board) · [Local interactive board](experiments/experiment-01-kanban-board/board/index.html) |
 | 02 | Bus booking | [Report](experiments/experiment-02-bus-ticket-booking/README.md) · [RouteNest Figma flow](https://www.figma.com/design/Y3tmdTkNGhnFigiG8TEixu?node-id=3-15) · [Local booking app](experiments/experiment-02-bus-ticket-booking/website/index.html) |
 | 03 | E-commerce stakeholder prototype | [Report](experiments/experiment-03-ecommerce-mobile-app/README.md) · [Nook & Nest Figma flow](https://www.figma.com/design/iGjfeEuj7Ytsn396i7QsdN?node-id=3-2) · [Local storefront app](experiments/experiment-03-ecommerce-mobile-app/app/index.html) |
 | 04 | One-week Jira Scrum sprint | [Report](experiments/experiment-04-jira-scrum/README.md) · [Jira import data](experiments/experiment-04-jira-scrum/jira-import.csv) · [Sprint plan](experiments/experiment-04-jira-scrum/sprint-plan.md) · Live Jira link pending connection |
@@ -15,4 +15,4 @@ Ten original experiment directories are organized using the reference repository
 | 09 | GitHub collaboration | [Report](experiments/experiment-09-github-collaboration/README.md) · [CampusNotes sample](experiments/experiment-09-github-collaboration/app/index.html) · [Interactive weekly planner](experiments/experiment-09-github-collaboration/app/weekly-planner.html) · [Merged pull request #1](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/pull/1) |
 | 10 | Merge conflict resolution | [Report](experiments/experiment-10-merge-conflicts/README.md) · [Conflict evidence](experiments/experiment-10-merge-conflicts/evidence/session-log.md) · [Resolved plan](experiments/experiment-10-merge-conflicts/app/task-plan.md) |
 
-Figma files are owned by the authenticated account. Browser demo state is local to the device. No live reservation, payment, or commerce order is processed. Jira/Trello status remains unclaimed until its own account board/project exists.
+Figma files are owned by the authenticated account. Browser demo state is local to the device. No live reservation, payment, or commerce order is processed. The Trello board is live in the authenticated account; Jira and Confluence account-side setup is in progress.
