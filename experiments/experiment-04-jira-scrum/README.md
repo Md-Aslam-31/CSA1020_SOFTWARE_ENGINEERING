@@ -17,10 +17,10 @@ Plan an original one-week Scrum sprint for CampusCart, a campus marketplace, usi
 2. Create eight original story records covering account access, category search, listing detail, listing creation, saving, seller messaging, sold-state handling, and moderation reports.
 3. Order Sprint 1 around the stated account/search/listing dependencies. Select the first four foundational stories for the one-week sprint and retain the next four in the project backlog.
 4. Start the active Jira sprint with the 29 October–5 November window. The linked Jira backlog is the source of truth for the current sprint and issue status.
-5. Use acceptance criteria and the local sprint plan to review scope. Story-point estimates in the plan/import data are planning estimates; Jira did not accept a Story Points field for this project, so the backlog does not display those estimates as native Jira values.
+5. Record estimates on the four selected stories (5, 5, 3, and 5 points; 18 total) and native prerequisite links: search blocks listing details, account access blocks listing creation, and listing detail/creation block later messaging and sold-state work.
 6. Keep all items To Do until work and acceptance evidence exist. The screenshots document setup and backlog state; they do not claim that the marketplace has been implemented or the sprint completed.
 
-The active sprint is underway. An end-of-sprint report is not available before 5 November 2026. Capture that report after the sprint ends and update this report with actual outcomes; do not infer completion from the plan.
+The active sprint is underway. Jira still shows all four sprint stories To Do; the 18 points are an estimate, not completed effort. An end-of-sprint report is not available before 5 November 2026. Capture it after the sprint ends and update this report with actual outcomes; do not infer completion from the plan.
 
 ## Evidence
 
@@ -31,6 +31,8 @@ The screenshots below are captures of the connected CCART project in the authent
 ![CampusCart Jira backlog with active sprint and remaining stories](screenshots/jira-backlog.png)
 
 ![CampusCart sprint start board](screenshots/sprint-start-board.jpg)
+
+The current status screenshot is retained from sprint setup; the four live point values and dependencies were added afterward and can be verified in Jira. Jira’s sprint end and burndown outcome remain pending.
 
 Local planning artifacts: [backlog.csv](backlog.csv), [Jira import data](jira-import.csv), and [one-week sprint plan](sprint-plan.md). These files preserve the original CampusCart requirements and acceptance criteria; Jira’s generated issue keys are CCART-1 through CCART-8.
 

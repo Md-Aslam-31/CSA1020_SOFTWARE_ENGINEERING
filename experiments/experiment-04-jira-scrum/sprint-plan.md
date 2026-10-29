@@ -13,9 +13,29 @@ Let a campus member find an active marketplace listing and let a seller publish 
 
 ## Candidate sprint backlog
 
-The original import plan proposes these four foundational stories, totaling 18 estimated points: create account/sign in (5), search listings by category (5), view listing details (3), and create a listing (5). Listing detail depends on search; listing creation depends on account access. The team should review its available capacity before treating estimates as a commitment. These estimates are planning data in the local import artifacts; the Jira project did not accept a native Story Points field.
+The active sprint includes four foundational stories, totaling 18 native Jira Story point estimate values: create account/sign in (5), search listings by category (5), view listing details (3), and create a listing (5). Listing detail depends on search; listing creation depends on account access. Estimates are relative planning values and should be checked against actual team capacity before they are treated as a commitment.
 
 The live project contains eight stories; four are in the active sprint and four remain in the backlog. Jira is the authoritative view of the current membership and statuses; see the linked board.
+
+## Prerequisites and acceptance
+
+| Story | Estimate | Prerequisite | Acceptance evidence |
+| --- | ---: | --- | --- |
+| Create account and sign in | 5 | None | Valid email creates an account; invalid input produces a clear error; signed-in member sees the profile. |
+| Search listings by category | 5 | Listing catalogue | Category and keyword narrow active listings; empty results explain the outcome. |
+| View listing details | 3 | Category search | Detail shows price, condition, seller, and image placeholders; closed listings cannot be contacted. |
+| Create a listing | 5 | Account access | Required listing fields validate and a saved listing appears in search. |
+
+Jira contains native `blocks` links for the dependencies. The other four stories remain for later planning: save listing, message seller, mark listing sold, and report a listing.
+
+## Risks and review controls
+
+- Confirm account verification and seller contact privacy before implementation.
+- Use active listings only in search and hide sold items from buyer results.
+- Confirm required listing fields and marketplace moderation ownership.
+- Review only behavior that can be demonstrated with acceptance evidence; leave all four issues To Do until actual work is complete.
+
+Planning cadence: agree scope and capacity at sprint planning, inspect blockers daily, demonstrate evidenced behavior at review, and record one practical process change at the retrospective. These are planned events, not completed events.
 
 ## Events
 

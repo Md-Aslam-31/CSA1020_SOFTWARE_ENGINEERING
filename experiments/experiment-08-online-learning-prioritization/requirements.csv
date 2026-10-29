@@ -5,3 +5,6 @@ CS-03,Interactive quizzes and assignments,Should-Have,Performance,Quality feedba
 CS-04,Progress tracking dashboard,Should-Have,Performance,Clearer progress should help learners,Requires course activity data
 CS-05,Peer discussion forums,Could-Have,Attractive,May delight cohorts that value community,Can follow course launch
 CS-06,Certificate generation,Could-Have,Attractive,Useful recognition but not required to learn,Define completion rules first
+CS-07,Bookmark lectures and save private notes,Could-Have,Performance,Useful for revisiting learning content; privacy and course context are required,Enrollment and lecture playback
+CS-08,Celebrate course milestones,Could-Have,Attractive,May encourage some learners but is not required for learning,Progress events and accessible motion behavior
+CS-09,Ask a course assistant for study guidance,Won't-Have this release,Attractive,Potentially helpful but accuracy privacy and cost controls are unresolved,Course content permissions and safe-response evaluation

@@ -1,0 +1,6 @@
+diff --git a/experiments/experiment-21-clone-and-edit/change-note.md b/experiments/experiment-21-clone-and-edit/change-note.md
+new file mode 100644
+--- /dev/null
++++ b/experiments/experiment-21-clone-and-edit/change-note.md
+@@
++CampusConnect is the student-support prototype in this original software-engineering portfolio.

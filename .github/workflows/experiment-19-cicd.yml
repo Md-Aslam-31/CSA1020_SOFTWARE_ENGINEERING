@@ -1,0 +1,40 @@
+name: Experiment 19 - StudySpark test, build, publish
+on:
+  pull_request:
+    paths:
+      - experiments/experiment-16-flask-todo-docker/**
+      - .github/workflows/experiment-19-cicd.yml
+  push:
+    branches: [main]
+    paths:
+      - experiments/experiment-16-flask-todo-docker/**
+      - .github/workflows/experiment-19-cicd.yml
+permissions:
+  contents: read
+  packages: write
+jobs:
+  test-build-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies and run unit tests
+        working-directory: experiments/experiment-16-flask-todo-docker
+        run: python -m pip install -r requirements.txt && python -m unittest -v
+      - name: Build image
+        run: docker build -t ghcr.io/${GITHUB_REPOSITORY,,}/campus-todos:${GITHUB_SHA::7} experiments/experiment-16-flask-todo-docker
+      - name: Log in to GHCR
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish image
+        if: github.event_name == 'push'
+        run: docker push ghcr.io/${GITHUB_REPOSITORY,,}/campus-todos:${GITHUB_SHA::7}
+      - name: Deployment gate
+        if: github.event_name == 'push'
+        run: echo 'Configure an approved protected deployment target before rollout.'

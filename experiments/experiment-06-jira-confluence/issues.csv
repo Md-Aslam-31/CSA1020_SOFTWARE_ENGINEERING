@@ -1,7 +1,8 @@
-Issue,Summary,Priority,Estimate,Initial status
-LMS-01,Search books by title,High,5,To Do
-LMS-02,Search books by author,High,3,To Do
-LMS-03,Show copy availability,High,3,To Do
-LMS-04,Reserve an available copy,Medium,5,To Do
-LMS-05,Notify reader when hold is ready,Medium,3,To Do
-LMS-06,View librarian circulation dashboard,Medium,5,To Do
+Issue,Summary,Priority,Estimate,Initial status,Active sprint
+LIBSYS-1,Search books by title,High,2,To Do,LIBSYS Sprint 1
+LIBSYS-2,Search books by author,High,2,To Do,LIBSYS Sprint 1
+LIBSYS-3,Show copy availability,High,3,To Do,LIBSYS Sprint 1
+LIBSYS-4,Reserve an available copy,Medium,5,To Do,LIBSYS Sprint 1
+LIBSYS-5,Notify reader when hold is ready,Medium,3,To Do,LIBSYS Sprint 1
+LIBSYS-6,View librarian circulation dashboard,Medium,3,To Do,LIBSYS Sprint 1
+LIBSYS-7,Generate a monthly circulation report,Medium,3,To Do,LIBSYS Sprint 1

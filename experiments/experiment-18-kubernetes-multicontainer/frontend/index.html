@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>StudySpark</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main><p class="eyebrow">STUDYSPARK · CAMPUS LEARNING</p><h1>Your next step, made simple.</h1><p class="intro">A shared study checklist connected to a Flask API.</p><section class="panel"><div class="panel-heading"><h2>Study tasks</h2><span id="status" class="status">Connecting…</span></div><form id="task-form"><label for="title">Add a task</label><div class="form-row"><input id="title" name="title" maxlength="200" placeholder="e.g. Review lecture notes" required><button>Add task</button></div></form><ul id="tasks" aria-live="polite"></ul></section></main>
+<script>
+const statusLabel=document.querySelector('#status');
+async function loadTasks(){try{const response=await fetch('/api/tasks');if(!response.ok)throw new Error('API unavailable');const rows=await response.json();const list=document.querySelector('#tasks');list.replaceChildren();for(const task of rows){const item=document.createElement('li');item.textContent=task.title;list.append(item)}statusLabel.textContent='Connected';statusLabel.className='status ready'}catch{statusLabel.textContent='Unavailable';statusLabel.className='status error'}}
+document.querySelector('#task-form').addEventListener('submit',async event=>{event.preventDefault();const title=document.querySelector('#title');const response=await fetch('/api/tasks',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({title:title.value})});if(response.ok){title.value='';await loadTasks()}else{statusLabel.textContent='Could not add task'}});loadTasks();
+</script></body></html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ModuleMate — Team project workspace</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="#top"><span class="brand-mark">M</span> ModuleMate</a><div class="top-meta"><span class="avatar">A</span><span>Aslam · Project lead</span></div></header>
+  <main id="top">
+    <section class="hero"><div><p class="eyebrow">TEAM PROJECT · SOFTWARE ENGINEERING</p><h1>Build the campus<br>together.</h1><p class="hero-copy">A clear view of module ownership, review readiness, and the work moving across branches.</p></div><div class="hero-note"><span class="pulse"></span><span>Release 0.1<br><strong>Team workflow active</strong></span></div></section>
+    <section class="toolbar" aria-label="Module filters"><div><h2>Project modules</h2><p>Each module moves through a focused feature branch and a reviewed pull request.</p></div><label class="search-label">Find a module<input id="search" type="search" placeholder="Search modules"></label></section>
+    <section id="modules" class="module-grid" aria-live="polite"></section>
+    <section class="workflow"><div><p class="eyebrow">CONTRIBUTION FLOW</p><h2>Small changes.<br>Clear review.</h2></div><ol><li><b>Branch</b><span>Start from the latest main</span></li><li><b>Build</b><span>Keep changes inside your module</span></li><li><b>Review</b><span>Link acceptance checks in the PR</span></li><li><b>Integrate</b><span>Resolve conflicts and rerun checks</span></li></ol></section>
+    <footer>ModuleMate · Experiment 15 · Demonstration project for Git branching and review</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

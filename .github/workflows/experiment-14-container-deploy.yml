@@ -1,0 +1,34 @@
+name: Experiment 14 - CampusConnect container publication
+on:
+  pull_request:
+    paths:
+      - experiments/experiment-11-static-site-docker-nginx/**
+      - .github/workflows/experiment-14-container-deploy.yml
+  push:
+    branches: [main]
+    paths:
+      - experiments/experiment-11-static-site-docker-nginx/**
+      - .github/workflows/experiment-14-container-deploy.yml
+permissions:
+  contents: read
+  packages: write
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build image
+        run: docker build -t ghcr.io/${GITHUB_REPOSITORY,,}/campusconnect:${GITHUB_SHA::7} experiments/experiment-11-static-site-docker-nginx
+      - name: Log in to GHCR
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publish image
+        if: github.event_name == 'push'
+        run: docker push ghcr.io/${GITHUB_REPOSITORY,,}/campusconnect:${GITHUB_SHA::7}
+      - name: Deployment gate
+        if: github.event_name == 'push'
+        run: echo 'Image publication is complete; configure a protected deployment environment and target before rollout.'

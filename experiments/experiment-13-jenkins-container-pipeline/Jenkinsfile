@@ -1,0 +1,9 @@
+pipeline {
+ agent any
+ stages {
+  stage('Checkout'){steps{checkout scm}}
+  stage('Test'){steps{sh 'python -m pip install -r experiments/experiment-12-flask-api-kubernetes/requirements.txt'; sh 'python -m unittest discover -s experiments/experiment-12-flask-api-kubernetes -p test_*.py -v'}}
+  stage('Build'){steps{sh 'docker build -t campus-tasks-api:local experiments/experiment-12-flask-api-kubernetes'}}
+  stage('Deploy'){when{branch 'main'} steps{echo 'Configure a protected target and credential before deployment.'}}
+ }
+}
