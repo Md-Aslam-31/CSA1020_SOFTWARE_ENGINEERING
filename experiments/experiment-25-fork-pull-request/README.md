@@ -20,16 +20,18 @@ Prepare a focused, tested change and document the fork → feature branch → up
 | Proposed patch and review checklist | [upstream-change.md](upstream-change.md) |
 | Test output | [Recorded tests](evidence/test-results.txt) |
 | Student's GitHub repositories | [Md-Aslam-31](https://github.com/Md-Aslam-31?tab=repositories) |
+| Live fork and contribution branch | [Md-Aslam-31/Spoon-Knife](https://github.com/Md-Aslam-31/Spoon-Knife) · [exp25/contributing-guide](https://github.com/Md-Aslam-31/Spoon-Knife/tree/exp25/contributing-guide) |
+| Upstream pull request | [PR #41998](https://github.com/octocat/Spoon-Knife/pull/41998) · [Contribution guide](https://github.com/Md-Aslam-31/Spoon-Knife/blob/exp25/contributing-guide/CONTRIBUTING.md) |
 | Portfolio index | [All experiments](../../README.md) |
 
 ## Algorithm
 
-1. Choose a public upstream project and confirm its contribution rules and license.
+1. Choose the public `octocat/Spoon-Knife` training project and confirm its purpose and contribution rules.
 2. Create a fork under `Md-Aslam-31`, clone the fork, and add the original source as `upstream`.
 3. Fetch both remotes and create a focused feature branch from the current upstream default branch.
-4. Add `summarizeTasks`, run the tests, and inspect the diff and whitespace.
-5. Commit only the helper, tests and package script; push the branch to the student's fork.
-6. Open a pull request from the fork branch to the chosen upstream, include test output, and follow maintainer feedback.
+4. Add the original `summarizeTasks` helper and tests in this portfolio; run the tests and inspect the diff and whitespace.
+5. Add a focused `CONTRIBUTING.md` on `exp25/contributing-guide` in the student's fork, then push it.
+6. Open the upstream pull request and include validation evidence. The PR is open; acceptance and merge are controlled by upstream maintainers.
 
 For local verification, from `project/` run:
 
@@ -39,8 +41,8 @@ node --test
 
 ## Output Evidence
 
-The original feature patch, tests and local test log are included. The required account-side fork and pull request are not created: no GitHub connector/API is installed in this workspace, and the browser interface here is unavailable for authenticated GitHub writes. No fork, branch URL, CI run or PR is fabricated.
+The original helper and six passing tests are included in this experiment directory. The live fork is `Md-Aslam-31/Spoon-Knife`, branch `exp25/contributing-guide` adds a focused contribution guide, and [upstream PR #41998](https://github.com/octocat/Spoon-Knife/pull/41998) is open. `git diff --check` passed. The upstream repository has no configured CI for this documentation PR; maintainer review and merge remain external.
 
 ## Result
 
-The feature implementation and six tests are complete locally. The remote fork/PR portion remains pending. After connecting GitHub or using the student's signed-in GitHub UI, follow the checklist in [upstream-change.md](upstream-change.md) and add the resulting fork, branch and PR links here.
+The feature implementation and six tests pass locally; the student-owned fork, branch, and upstream PR are live. The PR is awaiting upstream maintainer review, and no merge is claimed.

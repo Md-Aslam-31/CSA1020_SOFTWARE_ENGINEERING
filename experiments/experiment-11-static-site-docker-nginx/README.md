@@ -47,6 +47,6 @@ Open [http://localhost:8080](http://localhost:8080), inspect the responsive layo
 
 ## Evidence and result
 
-The source page and a real local-browser preview are included below. Docker is not installed in the authoring environment, so the image build, Nginx health check, and Docker-served browser evidence remain pending; the preview is not presented as container proof. This work is intentionally local; no public site or registry image is claimed.
+The source page and a real local-browser preview are included below. The hosted [Experiment 14 Actions run #3](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/40846745087) built the image, ran it, and checked `/` and `/healthz`. The live Pages preview is a separate static source preview, not the container instance.
 
 ![CampusConnect local browser preview](screenshots/campusconnect-browser-preview.png)
