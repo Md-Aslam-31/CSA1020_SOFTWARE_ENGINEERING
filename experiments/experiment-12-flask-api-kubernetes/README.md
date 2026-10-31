@@ -19,6 +19,7 @@ Implement and test a Flask JSON API, containerize it, and define a Kubernetes De
 | API implementation and tests | [app.py](app.py) · [test_app.py](test_app.py) |
 | Kubernetes Deployment and Service | [api.yaml](k8s/api.yaml) |
 | Recorded API test output | [4 passing tests](evidence/api-tests.txt) |
+| Hosted image, kind deployment and evidence artifact | [Successful Actions run #1](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/41172431105) · open its `experiment-12-kind-evidence` artifact |
 | Portfolio index | [All experiments](../../README.md) |
 
 ## API
@@ -41,4 +42,4 @@ Install `requirements.txt`, run `python -m unittest -v`, then `python app.py`. B
 
 ## Evidence and result
 
-The four API tests pass under Python 3.14 with Flask 3.1.3; the captured output is in [evidence/api-tests.txt](evidence/api-tests.txt). Docker and kubectl are unavailable here, so image build and cluster/browser evidence remain pending and are not claimed. The API intentionally uses in-memory data for this single-service lab; Experiment 18 adds PostgreSQL persistence.
+The four API tests pass under Python 3.14 with Flask 3.1.3; the captured output is in [evidence/api-tests.txt](evidence/api-tests.txt). The hosted GitHub Actions job built the image, deployed it to kind, exercised the NodePort service through port-forward, and uploaded cluster/API evidence in [run #1](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/41172431105). Docker and kubectl remain unavailable locally; the successful hosted run is the container/cluster evidence. The API intentionally uses in-memory data for this single-service lab; Experiment 18 adds PostgreSQL persistence.

@@ -12,13 +12,13 @@ The active workflow is [`.github/workflows/experiment-14-container-deploy.yml`](
 
 | What to open | Link |
 | --- | --- |
-| GitHub Actions workflow and successful run | [Workflow source](../../.github/workflows/experiment-14-container-deploy.yml) · [Run #1](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/40841798194) |
+| GitHub Actions workflow and successful run | [Workflow source](../../.github/workflows/experiment-14-container-deploy.yml) · [Run #3 with container smoke check](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/40846745087) |
 | Published image | `ghcr.io/md-aslam-31/csa1020_software_engineering/campusconnect:9501251` |
 | Site source and container setup | [CampusConnect](../experiment-11-static-site-docker-nginx/website/index.html) · [Dockerfile](../experiment-11-static-site-docker-nginx/Dockerfile) |
 | Portfolio index | [All experiments](../../README.md) |
 
 ## Verification and evidence
 
-The workflow is in the root `.github/workflows` directory. [Run #1 on commit `9501251`](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/40841798194) completed successfully: GitHub Actions built and published `ghcr.io/md-aslam-31/csa1020_software_engineering/campusconnect:9501251`. Pull it with `docker pull ghcr.io/md-aslam-31/csa1020_software_engineering/campusconnect:9501251`; GHCR may require `docker login ghcr.io` if the package remains private.
+The workflow is in the root `.github/workflows` directory. [Run #3](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/40846745087) completed successfully: GitHub Actions built and published `ghcr.io/md-aslam-31/csa1020_software_engineering/campusconnect:9501251`. Pull it with `docker pull ghcr.io/md-aslam-31/csa1020_software_engineering/campusconnect:9501251`; GHCR may require `docker login ghcr.io` if the package remains private.
 
-The workflow currently stops at a deployment gate. No cloud target or deployment credentials were configured, so there is no public hosted app URL and no cloud deployment is claimed.
+The workflow passed the Nginx container smoke checks and published the image. It currently stops at a deployment gate. No cloud target or deployment credentials were configured, so there is no public hosted app URL and no cloud deployment is claimed.
