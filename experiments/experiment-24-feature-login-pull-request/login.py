@@ -6,14 +6,17 @@ This file is a small learning exercise, not a complete authentication system.
 from collections.abc import Mapping
 import hashlib
 import hmac
+import secrets
 
 DEFAULT_ITERATIONS = 200_000
 
 
-def make_user_record(password: str, *, salt: bytes, iterations: int = DEFAULT_ITERATIONS) -> dict[str, str | int]:
-    """Build a salted PBKDF2 record for a test or local demonstration."""
+def make_user_record(password: str, *, salt: bytes | None = None, iterations: int = DEFAULT_ITERATIONS) -> dict[str, str | int]:
+    """Build a salted PBKDF2 record; generate a cryptographically random salt by default."""
     if not isinstance(password, str) or not password:
         raise ValueError("password must be a non-empty string")
+    if salt is None:
+        salt = secrets.token_bytes(16)
     if not isinstance(salt, bytes) or len(salt) < 16:
         raise ValueError("salt must contain at least 16 bytes")
     if isinstance(iterations, bool) or not isinstance(iterations, int) or iterations < 100_000:

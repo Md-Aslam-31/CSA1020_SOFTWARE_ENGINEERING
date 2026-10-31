@@ -48,6 +48,13 @@ class LoginTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             make_user_record("sample-pass", salt=bytes.fromhex("00112233445566778899aabbccddeeff"), iterations=999)
 
+    def test_record_builder_generates_unique_random_salts(self):
+        first = make_user_record("sample-pass")
+        second = make_user_record("sample-pass")
+        self.assertEqual(len(bytes.fromhex(first["salt"])), 16)
+        self.assertNotEqual(first["salt"], second["salt"])
+        self.assertTrue(login("student", "sample-pass", {"student": first}))
+
 
 if __name__ == "__main__":
     unittest.main()

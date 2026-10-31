@@ -35,8 +35,8 @@ This helper is an educational component only. It does not provide account storag
 
 ## Output Evidence
 
-The local test output and source are included above. Git pushes work through the existing Git credential helper, but the GitHub PR API connector is not installed in this workspace; no PR number, review, or merge is claimed.
+The helper generates a fresh 16-byte cryptographic salt when the caller omits one; callers can still supply a deterministic salt for tests. The PR and CI links will be recorded after the feature branch is reviewed.
 
 ## Result
 
-The original login helper and tests are complete; the tests cover valid and invalid credentials, input types, malformed hashes and salts, and iteration bounds. The feature-branch/PR submission portion is still pending. A live pull-request workflow requires the GitHub connector to be installed or the student to create the PR from a signed-in GitHub session.
+The original login helper and tests cover valid and invalid credentials, input types, malformed hashes and salts, and iteration bounds. This branch adds cryptographically random default salts and a uniqueness/login test. The live PR and check links are recorded in this report after GitHub review.
