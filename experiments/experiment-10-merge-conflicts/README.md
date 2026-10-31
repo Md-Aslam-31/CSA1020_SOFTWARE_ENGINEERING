@@ -10,6 +10,7 @@ Git and the task-plan sample in this directory.
 
 | What to open | Link |
 | --- | --- |
+| Faculty demo | [Interactive conflict walkthrough](https://md-aslam-31.github.io/CSA1020_SOFTWARE_ENGINEERING/experiments/experiment-10-merge-conflicts/demo/) |
 | Task-plan source | [Resolved plan](app/task-plan.md) |
 | Conflict and resolution evidence | [Command/session log](evidence/session-log.md) · [Conflict markers](evidence/conflicted-task-plan.md.txt) · [Resolved file](evidence/resolved-task-plan.md) · [Merge graph](evidence/merge-history.txt) |
 
@@ -22,7 +23,7 @@ Git and the task-plan sample in this directory.
 5. Resolve the line by preserving both priorities, stage the resolution, complete the merge and inspect history.
 
 ## Result
-The conflict was created in a disposable Git repository. The conflicting versions and resolution are preserved in evidence/. The merged focus keeps both intents: quiet study blocks and early deadline review. No remote merge is claimed.
+The conflict was created in a disposable Git repository. The conflicting versions and resolution are preserved in evidence/ and shown in the public walkthrough. The merged focus keeps both intents: quiet study blocks and early deadline review. The PR portion of the lab still needs a GitHub feature-branch change and PR record.
 
 ## Output Evidence
 [Command and commit log](evidence/session-log.md) · [Conflict markers](evidence/conflicted-task-plan.md.txt) · [Resolved plan](evidence/resolved-task-plan.md) · [Merge graph](evidence/merge-history.txt)

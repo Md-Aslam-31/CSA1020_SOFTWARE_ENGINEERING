@@ -1,14 +1,12 @@
 # Publish the experiment catalog
 
-The original catalog and static prototypes are prepared for GitHub Pages. The repository currently has no Pages site configured, so the Pages URL is not live yet.
+The original catalog and static prototypes are published on GitHub Pages at [md-aslam-31.github.io/CSA1020_SOFTWARE_ENGINEERING](https://md-aslam-31.github.io/CSA1020_SOFTWARE_ENGINEERING/). The repository's Pages source is configured to use GitHub Actions.
 
 ## One-time account setup
 
-1. Open the [repository Settings](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/settings/pages) while signed in as `Md-Aslam-31`.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions** and save.
-3. Open [Actions](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/workflows/deploy-static-portfolio.yml), select **Deploy experiment portfolio to GitHub Pages**, choose `main`, and run the workflow.
-4. After the deploy job succeeds, open `https://md-aslam-31.github.io/CSA1020_SOFTWARE_ENGINEERING/`.
+1. Open the [live portfolio](https://md-aslam-31.github.io/CSA1020_SOFTWARE_ENGINEERING/).
+2. After each push to `main`, check the [Pages deployment workflow](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/workflows/deploy-static-portfolio.yml) for a successful run. A manual rerun is available from the Actions page.
 
 The workflow publishes `index.html` and the original `experiments/` directory. This includes static front-end previews, reports, screenshots, and source artifacts. The workflow does not run Flask, PostgreSQL, Docker, Jenkins, or Kubernetes backends; pages labeled as local/API previews still need their documented local runtime. Atlassian and Figma links open their own account-hosted services.
 
-The workflow is manual so it will not fail on every push before Pages is enabled. Once the site is active, run it again after portfolio changes to refresh the hosted site.
+The first successful deployment is recorded at [GitHub Actions run 41171754112](https://github.com/Md-Aslam-31/CSA1020_SOFTWARE_ENGINEERING/actions/runs/41171754112). The workflow now republishes on pushes to `main` and also supports manual runs.

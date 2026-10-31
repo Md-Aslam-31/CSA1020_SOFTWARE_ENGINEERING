@@ -15,10 +15,11 @@ Deploy a small learning task app with a browser frontend, Flask API, and Postgre
 
 | What to open | Link |
 | --- | --- |
+| Public faculty demo | [Interactive StudySpark preview](https://md-aslam-31.github.io/CSA1020_SOFTWARE_ENGINEERING/experiments/experiment-18-kubernetes-multicontainer/frontend/?demo=1) · browser storage only |
 | Browser frontend and local preview capture | [StudySpark page](frontend/index.html) · [Local screenshot](screenshots/studyspark-local-browser.png) |
 | Flask API and passing test output | [API source](backend/app.py) · [3 passing tests](evidence/api-tests.txt) |
 | Multi-service container stack | [Compose file](compose.yaml) |
-| Cluster resources | [Kubernetes manifest](k8s/studyspark.yaml) |
+| Cluster resources and hosted run | [Kubernetes manifest](k8s/studyspark.yaml) · [Experiment 18 workflow](../../.github/workflows/experiment-18-multicontainer-kubernetes.yml) |
 | Portfolio index | [All experiments](../../README.md) |
 
 ## Run locally with Compose
@@ -53,8 +54,8 @@ For a browser/API preview while Docker is unavailable, open two terminals. In th
 
 ![StudySpark browser preview connected to the Flask API](screenshots/studyspark-local-browser.png)
 
-This screenshot documents the local frontend/API preview only. It is not Docker Compose or Kubernetes dashboard evidence.
+This screenshot documents the local frontend/API preview only. It is not Docker Compose or Kubernetes dashboard evidence. The public faculty preview has a separate browser-storage mode and also does not claim a backend or cluster.
 
 ## Verification and result
 
-The API tests exercise database health, create/list persistence, and title validation; run them with `python -m pip install -r backend/requirements.txt` then `python -m unittest discover -s backend -v`. The captured output is in [evidence/api-tests.txt](evidence/api-tests.txt). Docker and kubectl are not installed in the authoring environment, so container and cluster results are not represented as completed. The manifests and reproducible steps are included; no screenshot of a live deployment is claimed.
+The API tests exercise database health, create/list persistence, and title validation; run them with `python -m pip install -r backend/requirements.txt` then `python -m unittest discover -s backend -v`. The captured output is in [evidence/api-tests.txt](evidence/api-tests.txt). A GitHub Actions workflow now builds the containers, deploys the stack to an ephemeral kind cluster, exercises the API/frontend, scales the frontend, and uploads cluster evidence. Its public run record is linked from the root portfolio after the first run completes. The hosted static faculty preview remains explicitly separate from the backend/cluster experiment.
